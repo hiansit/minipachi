@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCKY 777 - ブラウザガジェット</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 大当たりの紙吹雪エフェクト用 -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div class="machine-container">
+        <div class="neon-border">
+            <h1 class="title">LUCKY 777</h1>
+            <div class="slot-machine">
+                <div class="reel-container">
+                    <div class="reel" id="reel1">7</div>
+                </div>
+                <div class="reel-container">
+                    <div class="reel" id="reel2">7</div>
+                </div>
+                <div class="reel-container">
+                    <div class="reel" id="reel3">7</div>
+                </div>
+            </div>
+            <div class="status-display" id="statusDisplay">CLICK TO START (SOUND ON)</div>
+        </div>
+    </div>
+
+    <!-- 大当たり時のオーバレイ -->
+    <div id="jackpotOverlay" class="jackpot-overlay hidden">
+        <div class="jackpot-text" id="jackpotText">大 当 た り ! !</div>
+    </div>
+
+    <!-- 背景の光などのためのエフェクト層 -->
+    <div id="flashBg" class="flash-bg"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
